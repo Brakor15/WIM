@@ -1,0 +1,32 @@
+<!doctype HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Site personnel de Yann Pascoet</title>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <a name="haut" class="cInvisible" href="#haut"></a>
+    <header>
+      <nav>
+	<h1>Yann PASCOET</h1>
+	<ul>
+	  <li><a href="index.html">Accueil</a></li>
+	  <li><a href="cv.html">CV</a></li>
+	  <li><a href="real.html">Réalisations</a></li>
+	  <li><a href="passions.html">Mes centres d'intérêt</a></li>
+	  <li><a class="active" href="about.html">Me contacter</a></li>
+	</ul>
+      </nav>
+    </header>
+    <div><a id="cRetour" classe"cInvisible" href="#haut"></a></div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      window.onscroll = function(ev) {
+      document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+      };
+      });
+    </script>
+  </body>
+</html>
